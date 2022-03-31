@@ -1,0 +1,30 @@
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import { auth } from "../firebase-config";
+import { notifyError, notifySuccess } from "./notifications";
+
+export const register = async (email, password) => {
+  try {
+    await createUserWithEmailAndPassword(auth, email, password);
+    notifySuccess(`Hello ${email}`);
+  } catch (error) {
+    notifyError(error.message);
+  }
+};
+
+export const login = async (email, password) => {
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    notifySuccess(`Hello ${email}`);
+  } catch (error) {
+    notifyError(error.message);
+  }
+};
+
+export const logout = async () => {
+  await signOut(auth);
+  notifySuccess("Goodbye");
+};
