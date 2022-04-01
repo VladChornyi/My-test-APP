@@ -79,7 +79,7 @@ export const Wrapper = styled.div`
   }
   .error {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 15px;
     font-size: 10px;
     color: rgba(255, 0, 0, 0.65);
