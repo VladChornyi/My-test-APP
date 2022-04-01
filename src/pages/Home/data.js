@@ -1,5 +1,3 @@
-// import image1 from "./images/1.jpg";
-
 export const contacts = [
   {
     id: "1",
@@ -126,6 +124,7 @@ export const projectExperiance = [
     id: "3",
     name: "Simple Plan App",
     link: "https://simpleplanapp-team.netlify.app/login",
+    git: "https://github.com/VladChornyi/SimplePlanApp",
     commercial: false,
     about:
       "application for scheduling tasks for different projects and sprints",
@@ -135,6 +134,7 @@ export const projectExperiance = [
     id: "4",
     name: "Shop from future",
     link: "https://xenodochial-hoover-c2cf3e.netlify.app/",
+    git: "https://github.com/VladChornyi/Shop-from-future-team-js",
     commercial: false,
     about: "online store with the ability to place their own products",
     technologies: "JS, Handlebars, slick-slider, Sass",

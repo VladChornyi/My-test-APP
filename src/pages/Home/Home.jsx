@@ -83,6 +83,19 @@ const Home = () => {
                   >
                     {item.name}
                   </a>
+                  {item.git ? (
+                    <>
+                      <span> | </span>
+                      <a
+                        className="cv-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={item.git}
+                      >
+                        github.link
+                      </a>
+                    </>
+                  ) : null}
                 </p>
                 <p>Technologies: {item.technologies}</p>
                 <p>About project: {item.about}</p>
