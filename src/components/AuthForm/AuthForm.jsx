@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useState } from "react";
 
 import { login, register } from "../../helpers/authorization";
+import SubmitBtn from "../SubmitBtn";
 import { Wrapper } from "./AuthForm.styled";
 import { validationSchema } from "./validationSchema";
 
@@ -68,9 +69,7 @@ const AuthForm = () => {
                 />
               </label>
             </div>
-            <button className="submit-btn" type="submit">
-              {isSignUpPage ? "Sign up" : "Log in"}
-            </button>
+            <SubmitBtn content={isSignUpPage ? "Sign up" : "Log in"} />
           </Form>
         </Formik>
       </div>

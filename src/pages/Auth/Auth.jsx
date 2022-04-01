@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import AuthForm from "../../components/AuthForm";
 
 const Auth = () => {
