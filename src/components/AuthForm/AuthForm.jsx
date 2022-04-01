@@ -61,6 +61,7 @@ const AuthForm = () => {
                 <Field
                   className="auth-input"
                   name="password"
+                  type="password"
                   placeholder="Password"
                 />
                 <ErrorMessage
